@@ -48,3 +48,11 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.cellno {
+    margin-top: -10px;
+}
+
+.buttonSignup {
+    margin-top: 1px;
+}

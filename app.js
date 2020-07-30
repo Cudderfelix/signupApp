@@ -21,6 +21,7 @@ app.post("/", function(req, res) {
     let firstName = req.body.fname;
     let lastName = req.body.lname;
     let emailAdd = req.body.email;
+    let phoneNo = req.body.phone;
 
     let data = {
         members: [{
@@ -28,7 +29,8 @@ app.post("/", function(req, res) {
             status: "subscribed",
             merge_fields: {
                 FNAME: firstName,
-                LNAME: lastName
+                LNAME: lastName,
+                PHONE: phoneNo
             }
 
         }]
