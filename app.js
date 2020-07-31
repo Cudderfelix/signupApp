@@ -41,10 +41,10 @@ app.post("/", function(req, res) {
 
 
     let options = {
-        url: "https://us19.api.mailchimp.com/3.0/lists/cb59fe2221",
+        url: "https://us19.api.mailchimp.com/3.0/lists/audienceID",
         method: "POST",
         headers: {
-            "Authorization": "code1 be9d1276610432370bb2ce97c19a2803-us19"
+            "Authorization": "code1 apikey-us19"
         },
 
         body: jsonData
@@ -76,8 +76,3 @@ app.listen(process.env.PORT || 3000, function() {
     console.log("Server started on port 3000");
 });
 
-//api key
-//be9d1276610432370bb2ce97c19a2803 - us19
-
-//audience id
-//cb59fe2221
